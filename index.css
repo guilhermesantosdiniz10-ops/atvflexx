@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e5e5e5;
+    color: #21243d;
+    font-size: 14px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+}
+
+.inicio {
+    padding: 60px 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.texto {
+    max-width: 500px;
+}
+
+.inicio h1 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.inicio img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -5px 5px #edf7fa;
+}
+
+.botao {
+    display: inline-block;
+    background: #ff6464;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: #e65353
+}
+
+.formacoes,
+.habilidades {
+    background: #edf7fa;
+    padding: 25px 12%;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+.cartao {
+    background: white;
+    padding: 22px;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+}
+
+.cartao h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.detalhes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.detalhes span + span {
+    border-left: 1px solid #8695a4;
+    padding-left: 15px;
+}
+
+.cartao p,
+.projeto p,
+.habilidade p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.experiencias {
+    padding: 25px 12%;
+}
+
+.projeto {
+    display: flex;
+    gap: 18px;
+    padding: 5px 0 18px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.projeto:last-child {
+    border-bottom: none;
+}
+
+.projeto img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.projeto > div {
+    flex: 1;
+    min-height: 0;
+}
+
+.projeto h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.ano {
+    background: #142850;
+    color: white;
+    padding: 3px 9px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.projeto .detalhes span:last-child {
+    color: #8695a4;
+}
+
+.habilidade {
+    background: white;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 3px;
+}
+
+.habilidade i {
+    font-size: 42px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.habilidade h3 {
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+
+footer {
+    background: white;
+    text-align: center;
+    padding: 25px 15px 35px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    
+    
+    
+}
+
+.redes a {
+    color: #21243d;
+    font-size: 24px;
+}
+
+.redes a:hover {
+    color: #ff6464;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+    .inicio {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 7%;
+    }
+    .inicio h1 {
+        font-size: 26px;
+    }
+    .inicio img {
+        width: 145px;
+        height: 145px;
+    }
+    .formacoes,
+    .habilidades,
+    .experiencias {
+        padding: 25px 7%;
+    }
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+    .projeto {
+        gap: 12px;
+    }
+    .projeto img {
+        width: 110px;
+        height: 100px;
+    }
+    .projeto h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .projeto .detalhes {
+        gap: 8px;
+    }
+    .projeto .detalhes span + span {
+        padding-left: 8px;
+    }
+    .projeto p {
+        font-size: 11px;
+    }
+    .redes {
+        gap: 22px;
+    }
+}
+
+@media (max-width: 360px) {
+    .projeto {
+        flex-direction: colum;
+    }
+    .projeto img {
+        width: 100%;
+        height: 150px ;
+    }
+}
